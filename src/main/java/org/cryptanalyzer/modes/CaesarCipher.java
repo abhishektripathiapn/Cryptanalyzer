@@ -13,7 +13,7 @@ public class CaesarCipher extends CryptanalysisMode{
     public void encrypt(int key) {
         String sourceFile = this.getSourceFile();
         String destinationFile = "D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\ResultingFile.txt";
-
+        //Reading data from source provided by the user and writing it in the destination file.
         try(FileReader fileReader = new FileReader(sourceFile);
             FileWriter fileWriter = new FileWriter(destinationFile))
         {
@@ -30,13 +30,18 @@ public class CaesarCipher extends CryptanalysisMode{
 
     @Override
     public void decrypt(int key) {
-        try {
-            FileReader reader = new FileReader(this.getSourceFile());
-            FileWriter writer = new FileWriter("D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\ResultingFile.txt");
+        String sourceFile = this.getSourceFile();
+        String destinationFile = "D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\ResultingFile.txt";
+        //Reading data from source provided by the user and writing it in the destination file.
+        try(FileReader fileReader = new FileReader(sourceFile);
+            FileWriter fileWriter = new FileWriter(destinationFile))
+        {
             int data;
-            while ((data = reader.read()) != -1){
-                writer.append((char) (data - key));
+            while ((data = fileReader.read()) != -1)
+            {
+                fileWriter.write((char) (data - key));
             }
+            System.out.println("Your data is encrypted. You can check in:- " + Path.of(destinationFile));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

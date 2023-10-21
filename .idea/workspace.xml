@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fe8a5e42-2830-415a-afaa-9e0685194a3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/ResultingFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/ResultingFile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/SourceFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/SourceFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/TextToEncrypt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/BruteForce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CaesarCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CryptanalysisMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CryptanalysisMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/Substitution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/Substitution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
