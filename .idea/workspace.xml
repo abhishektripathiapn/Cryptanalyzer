@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8a5e42-2830-415a-afaa-9e0685194a3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Exceptions/IllegalMethodException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/SourceFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/TextToEncrypt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/BruteForce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CaesarCipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CryptanalysisMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/Substitution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/SourceFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/SourceFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/files/TextToEncrypt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/BruteForce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CryptanalysisMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/CryptanalysisMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/Substitution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cryptanalyzer/modes/Substitution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +29,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2X3nKuTwJxr3S6giRBzwL7iy2IM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,14 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.cryptanalyzer.modes" />
@@ -109,6 +103,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/cryptanalyzer/Main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

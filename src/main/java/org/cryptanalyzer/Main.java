@@ -1,18 +1,12 @@
 package org.cryptanalyzer;
 
 import org.cryptanalyzer.Exceptions.IllegalMethodException;
-import org.cryptanalyzer.modes.BruteForce;
-import org.cryptanalyzer.modes.CaesarCipher;
-import org.cryptanalyzer.modes.CryptanalysisMode;
-import org.cryptanalyzer.modes.Substitution;
+import org.cryptanalyzer.modes.*;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException, IllegalMethodException {
+    public static void main(String[] args) throws IllegalMethodException {
         Scanner scanner = new Scanner(System.in);
         //Taking file path as a input
         System.out.println("Hello, this is a program for 'Cryptanalysis'.");
@@ -34,15 +28,24 @@ public class Main {
         System.out.println("What do you want to do?(1 or 2)\n1. Encrypt \n2. Decrypt");
         byte mode = scanner.nextByte();
         scanner.nextLine();
-
+        //Using the different modes(encrypyt or decrypt of the cryptanalysis method
         switch (mode){
-            case 1 -> method.encrypt(sourceFile);
-            case 2 -> method.decrypt(sourceFile);
+            case 1 -> {
+                if(method instanceof CaesarCipher || method instanceof Substitution){
+                    System.out.println("Please enter the key (32 - 95)");
+                    int key = scanner.nextInt();
+                    method.encrypt(key);
+                }else method.encrypt(0);
+            }
+            case 2 -> {
+                if(method instanceof CaesarCipher || method instanceof Substitution){
+                    System.out.println("Please enter the key (32 - 95)");
+                    int key = scanner.nextInt();
+                    method.decrypt(key);
+                }else method.decrypt(0);
+            }
             default -> throw new IllegalMethodException("Illegal mode " + mode + " selected it must be 1 or 2.");
         }
-
-        String destinationFile = "D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\TextToEncrypt.txt";
-
-
+//        String destinationFile = "D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\TextToEncrypt.txt";
     }
 }

@@ -2,16 +2,16 @@ package org.cryptanalyzer.modes;
 
 public class BruteForce extends CryptanalysisMode{
     public BruteForce(String sourceFile) {
-        this.sourceFile = sourceFile;
+        super(sourceFile);
     }
 
     @Override
-    public void encrypt(String sourceFile) {
-
+    public void encrypt(int key) {
+        System.out.println("encryption not allowed in Brute Force mode.");
     }
 
     @Override
-    public void decrypt(String sourceFile) {
+    public void decrypt(int key) {
 
     }
 }

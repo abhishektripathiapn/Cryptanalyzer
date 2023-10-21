@@ -1,17 +1,18 @@
 package org.cryptanalyzer.modes;
 
 public class Substitution extends CryptanalysisMode{
+
     public Substitution(String sourceFile) {
-        this.sourceFile = sourceFile;
+        super(sourceFile);
     }
 
     @Override
-    public void encrypt(String sourceFile) {
+    public void encrypt(int key) {
 
     }
 
     @Override
-    public void decrypt(String sourceFile) {
+    public void decrypt(int key) {
 
     }
 }
