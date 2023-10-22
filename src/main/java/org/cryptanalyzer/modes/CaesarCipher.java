@@ -2,7 +2,6 @@ package org.cryptanalyzer.modes;
 
 import java.io.*;
 import java.nio.file.Path;
-import java.util.Scanner;
 
 public class CaesarCipher extends CryptanalysisMode{
 

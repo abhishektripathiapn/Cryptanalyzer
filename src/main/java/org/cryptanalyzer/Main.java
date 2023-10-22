@@ -2,7 +2,6 @@ package org.cryptanalyzer;
 
 import org.cryptanalyzer.Exceptions.IllegalMethodException;
 import org.cryptanalyzer.modes.*;
-
 import java.util.Scanner;
 
 public class Main {
@@ -33,19 +32,17 @@ public class Main {
             case 1 -> {
                 if(method instanceof CaesarCipher || method instanceof Substitution){
                     System.out.println("Please enter the key (32 - 95)");
-                    int key = scanner.nextInt();
-                    method.encrypt(key);
+                    method.encrypt(0);
                 }else method.encrypt(0);
             }
             case 2 -> {
                 if(method instanceof CaesarCipher || method instanceof Substitution){
-                    System.out.println("Please enter the key (32 - 95)");
+                    System.out.println("Please enter the key(Integer value):-");
                     int key = scanner.nextInt();
                     method.decrypt(key);
                 }else method.decrypt(0);
             }
             default -> throw new IllegalMethodException("Illegal mode " + mode + " selected it must be 1 or 2.");
         }
-//        String destinationFile = "D:\\AbhiProject\\Cryptanalyzer\\src\\main\\java\\org\\cryptanalyzer\\files\\TextToEncrypt.txt";
     }
 }
