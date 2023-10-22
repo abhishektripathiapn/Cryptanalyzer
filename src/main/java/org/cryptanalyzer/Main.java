@@ -30,18 +30,12 @@ public class Main {
         //Using the different modes(encrypyt or decrypt of the cryptanalysis method
         switch (mode){
             case 1 -> {
-                if(method instanceof CaesarCipher || method instanceof Substitution){
+                if(method instanceof CaesarCipher){
                     System.out.println("Please enter the key (32 - 95)");
                     method.encrypt(0);
                 }else method.encrypt(0);
             }
-            case 2 -> {
-                if(method instanceof CaesarCipher || method instanceof Substitution){
-                    System.out.println("Please enter the key(Integer value):-");
-                    int key = scanner.nextInt();
-                    method.decrypt(key);
-                }else method.decrypt(0);
-            }
+            case 2 ->  method.decrypt(0);
             default -> throw new IllegalMethodException("Illegal mode " + mode + " selected it must be 1 or 2.");
         }
     }

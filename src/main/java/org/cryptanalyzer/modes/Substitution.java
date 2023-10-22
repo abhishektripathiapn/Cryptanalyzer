@@ -8,12 +8,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Substitution extends CryptanalysisMode{
-    private final String ALPHABET = " .abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private final String SUBSTITUTION = "MNBVCXZLKJHGFDSAQWERTYUIOP .,lkjhgfdsazxcvbnmpoiuytrewq";
-    private final Map<Character,Character> ENCODE_MAP = new HashMap<>();
-    private final Map<Character,Character> DECODE_MAP = new HashMap<>();
+    private final String ALPHABET;
+    private final String SUBSTITUTION;
+    private final Map<Character,Character> ENCODE_MAP;
+    private final Map<Character,Character> DECODE_MAP;
     //whenever the object of Substitution class is created this block will be executed before the object creation;
     {
+        ALPHABET = " .abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        SUBSTITUTION = "MNBVCXZLKJHGFDSAQWERTYUIOP .,lkjhgfdsazxcvbnmpoiuytrewq";
+        DECODE_MAP = new HashMap<>();
+        ENCODE_MAP = new HashMap<>();
         for (int i = 0; i < ALPHABET.length(); i++) {
             ENCODE_MAP.put(ALPHABET.charAt(i),SUBSTITUTION.charAt(i));
             DECODE_MAP.put(SUBSTITUTION.charAt(i),ALPHABET.charAt(i));
